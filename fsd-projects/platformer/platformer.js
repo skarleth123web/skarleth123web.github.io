@@ -1,3 +1,5 @@
+const { createContext } = require("react");
+
 $(function () {
   // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
@@ -30,15 +32,17 @@ $(function () {
     toggleGrid();
 
     // TODO 2 - Create Platforms
-    createPlatform(500, 0, 20, 290);
-    createPlatform(1350, 400, 50, 50, "red");
-
+    createPlatform(600, 700, 200, 20);
+    createPlatform(700, 400, 50, 50, "red");
+    createPlatform(300, 500, 600, 30, "blue");
+    createPlatform(400, 700, 400, 20, "green");
+    createPlatform(900, 610, 400, 20, "orange");
     // TODO 3 - Create Collectables
-    createCollectable("steve", 1350, 50);
-    createCollectable("diamond", 200, 170, 0.5, 0.7);
+
     // TODO 4 - Create Cannons
-    createCannon("top", 200, 100);
-    createCannon("right", 300, 2000);
+    createCannon("top",500, 1800);
+    createCannon("right",700, 1800);
+    createCannon("top",1000, 1800);
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
